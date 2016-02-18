@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -h $MYSQL_HOST $MYSQL_DATABASE < /opt/inspircd/schema.sql 
+basedir=$(dirname $0)
+confdir=/inspircd/conf.d
+
+env=$(compgen -v |sed 's/^/$/' | paste -s -d ':')
+
+for template in $(find $basedir/templates -type f); do
+  output=$confdir/$(basename $template)
+  echo "Writing $output"
+  envsubst $env < $template > $output
+done
+
+exec /inspircd/bin/inspircd --nofork
+

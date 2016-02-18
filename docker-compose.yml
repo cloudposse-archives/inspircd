@@ -1,0 +1,43 @@
+mysql:  
+  image: "cloudposse/mysql"
+  volumes:
+    - "/tmp/irc/mysql:/var/lib/mysql"
+  command: "mysqld"
+  environment:
+    MYSQL_DATABASE: inspircd
+    MYSQL_USER: irc
+    MYSQL_PASSWORD: password
+    MYSQL_ROOT_PASSWORD: secret
+
+ircd:  
+  image: "cloudposse/inspircd"
+  entrypoint: /bin/sleep inf
+  ports:
+    - 6667:6667
+    - 8080:8080
+  volumes:
+    - ./:/opt/inspircd
+    - ./conf.d/:/inspircd/conf.d/
+    - ./inspircd.conf:/inspircd/conf/inspircd.conf
+  environment:
+    MYSQL_HOST: inspircd_mysql_1
+    MYSQL_DATABASE: inspircd
+    MYSQL_USER: irc
+    MYSQL_PASSWORD: password
+
+anope:  
+  image: "cloudposse/anope"
+  entrypoint: /bin/sleep inf
+  ports:
+    - 8081:8081
+  volumes:
+    - ../anope:/opt/anope
+  environment:
+    MYSQL_HOST: inspircd_mysql_1
+    MYSQL_DATABASE: inspircd
+    MYSQL_USER: irc
+    MYSQL_PASSWORD: password
+    MYSQL_PREFIX: anope_
+    ANOPE_GEOIP_DATABASE: country
+
+
