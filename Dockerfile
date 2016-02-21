@@ -26,11 +26,9 @@ ENV INSPIRCD_SQLLOG_QUERY INSERT INTO events (nick, host, ip, user_name, ident, 
 # Mysql
 ENV MYSQL_USER irc
 ENV MYSQL_PASSWORD password
-ENV MYSQL_DATABASE anope
+ENV MYSQL_DATABASE inspircd
 ENV MYSQL_HOST localhost
 ENV MYSQL_PORT 3306
-ENV MYSQL_PREFIX anope_
-
 
 
 # TODO: MySQL configuration
