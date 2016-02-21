@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -h $MYSQL_HOST $MYSQL_DATABASE < /opt/inspircd/schema.sql 
-basedir=$(dirname $0)
-confdir=/inspircd/conf.d
+basedir=/inspircd
+confdir=$basedir/conf.d
 
 env=$(compgen -v |sed 's/^/$/' | paste -s -d ':')
 
