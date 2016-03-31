@@ -17,7 +17,7 @@ CREATE TABLE `users` (
   `umode` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_user` (`nick`),
-  KEY `unique_user` (`nick`),
+  UNIQUE KEY `unique_user` (`nick`),
   KEY `index_multi` (`nick`,`password`,`approved_at`,`disabled_at`) USING BTREE,
   KEY `index_approved_at` (`approved_at`),
   KEY `index_disabled_at` (`disabled_at`)
