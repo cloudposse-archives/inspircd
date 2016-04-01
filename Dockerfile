@@ -38,7 +38,7 @@ ENV MYSQL_PORT 3306
 # TODO: WebIRC
 
 ADD https://github.com/inspircd/inspircd/archive/v2.0.18.tar.gz /usr/src/
-ADD https://raw.githubusercontent.com/jakubkosinski/inspircd-m_sqllog/master/m_sqllog.cpp /usr/src/
+ADD m_sqllog.cpp /usr/src/
 
 RUN apt-get update && \
     apt-get install -y build-essential libssl-dev libssl1.0.0 openssl pkg-config  libwww-perl libmysqlclient-dev mysql-client gettext && \
