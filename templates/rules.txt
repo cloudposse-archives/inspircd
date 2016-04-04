@@ -1,1 +1,128 @@
-Please be respectful of our community.
+$INSPIRCD_NETWORK RULES
+
+  These are the rules to the chat rooms and they apply to everyone.
+
+  Our channel rules will be enforced in our channels by our channel operators. (You can recognize a channel operator by them having a symbol (, , , and ) behind their names and can be found at the top of the users lists. 
+  In chat clients outside of $INSPIRCD_NETWORK, channel operators may be recognized by ~ & @ or % or alternative symbols.)
+
+  If you need to report something to a channel operator, do this in a private message and not in the chatrooms.
+
+  If you don’t follow the rules there is a good chance that you find yourself kicked or banned from our channels.
+
+  In case you have questions/issue about being banned from the chat please send an e-mail to: $INSPIRCD_ADMIN_EMAIL
+
+YOU MUST BE 18+ TO CHAT
+
+  Our channels are 18+ channels, chatters under the age of 18 are not allowed. Do not use numbers in your nickname or using a name that may portray you as being under aged either.
+
+NO PROHIBITED TOPICS
+
+  We have no tolerance for incest, pedophilia, beastiality, rape, kidnapping or any illegal activities, discussing these kind of things may result in a ban with no further questions asked.
+
+NO INCEST
+
+  Do not use any name related to relate to family members. Examples include: son, daughter, brother, sister, father, daddy, mother, mommy, grandpa, grandma, aunt, uncle.
+
+NO HATE SPEECH
+
+  We have no tolerance for racism, Nazism, homophobia or the bashing of any political or religious group or ideas, discussing these kind of things may result in a ban with no further questions asked.
+
+NO ABUSIVE BEHAVIOR
+
+  We have no tolerance for trolling/fighting/name calling/abusing other chatters or the use of crude language, this kind of behavior may result in a warning/kick or ban from our channels.
+
+USE ENGLISH
+
+  Our channels are used internationally, the language that is used to chat is English, keep other languages to private messages.
+
+DON'T JOIN WITH MULTIPLE NICKS
+
+  Our channels allow you to connect with one client, do not use 2 or more clients at the same time.
+
+NO ADVERTISING
+
+  Our channels are not to be used for advertisements of other sites/chats/businesses/etc. or any commercial related activities including – but not limited to webcam/skype shows/sexual activities/etc.
+
+NO SHOUTING OR FLOODING
+
+  Do not spam/flood our channels repeatedly with same messages, intentions or large blocks of text. These are chat channels, use them so.
+
+  Do not write in all capital letters, our Bot will kick you for it and it is seen as rude behavior in a chat.
+
+NO MISCONFIGURED BOTS
+
+  Do not bring bots or scripts which disrupt the chat into our channels, such bots/users will be banned.
+
+NO GENDER BENDING
+
+  Do not portray yourself as a gender you are not or impersonate another chatter.
+
+  Don’t use illegible color for your messages
+
+  Do not use the neon colors to chat, as not all people can read them well. (we know we offer them on the website but it is either offering them all or none at all and we wanted to let you chose at least some colors to distinguish yourself with)
+
+KEEP GRAPHIC ROLEPLAYS PRIVATE
+
+  Keep sexual chat/role-play or graphical descriptions of fetishes into private messages or your own created channels. See below for how to send a PM (private message).
+
+RESPECT OTHER USERS
+
+  Respect each other and if another chatter tells you no, don’t press the matter.
+
+  Do not impersonate other members.
+
+  If you feel another user is harassing you in private messages, use the `/ignore` or `/silence` commands to stop them messaging you. (see the basic commands below)
+
+
+RESPECT CHANNEL OPERATORS
+
+  Always follow directions given by our channel operators staff and do not attack/abuse or feel the need to insult them. Doing so may result in a ban without any further warning.
+
+  Do not intentionally evade a ban. You must wait until your ban expires or is removed.
+
+  If your name changes to a Guest1234 name, you probably used a name being registered by another user or one which is not allowed on the network. Change it back to display another name with the `/nick newname` command.
+
+UNDERSTANDING THE CHAT APP
+
+  To your right is the list of chatters and idlers.  NOTE: impersonating to be a gender you are not will result in a ban.
+
+  A "PM" is a private message.  You can click on a name and select "PM", it will turn yellow when your name is mentioned.
+
+BASIC COMMANDS
+
+  CHOOSE YOUR NICKNAME:
+
+     To choose your nickname, type:
+
+       /nick NewName
+
+     NOTE: in choosing your nickname, we do not allow any numbers in your nickname from 10-17.
+
+  DESCRIBING AN ACTION:
+
+     You can describe your actions in third person form, like this:
+
+       /me action
+
+     For example, if your nick is "perv" and you type:
+
+       /me blushes
+
+     The chat will show:
+
+       perv blushes
+
+  MAKE YOUR OWN CHANNEL:
+
+     To make your own channel/chatroom type:
+
+       /join #chatroom
+
+     For example:
+        /join #nsfw-pics
+
+  SHARING PHOTOS
+
+    To share images to the chatroom, you will need the direct link to the image file. If the image isn't already uploaded, you can use a free hosting service like photobucket or tinypic.  
+    Paste the direct link to the image.
+

@@ -1,1 +1,30 @@
-Welcome
+
+
+Welcome to $INSPIRCD_NETWORK
+
+*** TERMS OF SERVICE ***
+
+By connecting to $INSPIRCD_NETWORK, you agree that:
+
+  * You are at least 18 years old.
+  * You will not chat about prohibited topics: pedophilia, beastiality, rape, kidnapping, incest, and all illegal activities.
+  * You will not use a prohibited nickname: any name related to family members, such as son, daughter, daddy, grandpa, uncle, etc.
+  * You will be respectful of others. Hate speech, verbal abuse, excessive cursing, and repeating/shouting (messages in ALL CAPS) are not allowed.
+  * You will use English in the chatrooms. You may use other languages in your private chats.
+  * You will not join the chatroom with multiple different nicknames at the same time.
+  * You will not impersonate other chatters.
+  * You will keep your sexually explicit chats in private messages / private channels (chatrooms).
+
+*** PRIVACY POLICY ***
+
+By connecting to $INSPIRCD_NETWORK, you agree that:
+
+  * You are aware that messages sent to the chat server, including private chats, will be visible to, and may be saved by, other users.
+  * You grant $INSPIRCD_NETWORK the right to monitor, record, and repurpose all messages sent to any other user or channel (chatroom), public or private.
+  * You will not send self-identifying information or personal information about others.
+  * You will not hold $INSPIRCD_NETWORK or its customers, partners, or affiliates responsible for duress or losses resulting from sharing of private information by yourself or others.
+
+Type `/rules` to review the rules for this network.
+
+
+
