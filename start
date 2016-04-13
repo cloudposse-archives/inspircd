@@ -12,5 +12,5 @@ for template in $(find $basedir/templates -type f); do
   envsubst $env < $template > $output
 done
 
-exec /inspircd/bin/inspircd --nofork
+exec /inspircd/bin/inspircd --config $basedir/conf/inspircd.conf --nofork
 

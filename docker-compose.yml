@@ -1,10 +1,11 @@
 mysql:  
   image: "cloudposse/mysql"
   volumes:
-    - "./schema.sql:/var/lib/mysqldump.sql"
+    #- "./schema.sql:/var/lib/mysqldump.sql"
+    - "./mysqldump.sql:/var/lib/mysqldump.sql"
   command: "mysqld"
   environment:
-    MYSQL_DATABASE: inspircd
+    MYSQL_DATABASE: irc
     MYSQL_USER: irc
     MYSQL_PASSWORD: password
     MYSQL_ROOT_PASSWORD: secret
@@ -21,10 +22,23 @@ ircd:
 #    - ./inspircd.conf:/inspircd/conf/inspircd.conf
   environment:
     MYSQL_HOST: inspircd_mysql_1
-    MYSQL_DATABASE: inspircd
+    MYSQL_DATABASE: irc
     MYSQL_USER: irc
     MYSQL_PASSWORD: password
-
+    INSPIRCD_SERVER_NAME: "irc.localhost"
+    INSPIRCD_SERVER_DESCRIPTION: "Test Network"
+    INSPIRCD_NETWORK: "Test Network"
+    INSPIRCD_ADMIN_NAME: "Test Network Support"
+    INSPIRCD_ADMIN_NICK: "support"
+    INSPIRCD_ADMIN_EMAIL: "support@localhost"
+    INSPIRCD_LINK_NAME: "anope.localhost"                                                                                                                                                                    
+    INSPIRCD_LINK_PORT: "7000"
+    INSPIRCD_LINK_SEND_PASS: "secret"
+    INSPIRCD_LINK_RECV_PASS: "secret"
+    INSPIRCD_CGIHOST_WEBIRC_PASSWORD: "secret"
+    INSPIRCD_CLOAK_KEY: "something-very-secret"
+    INSPIRCD_STATS_USERNAME: "stats"
+    INSPIRCD_STATS_PASSWORD: "secret"
 anope:  
   image: "cloudposse/anope"
 #  entrypoint: /bin/sleep inf
@@ -34,10 +48,17 @@ anope:
 #    - ../anope:/opt/anope
   environment:
     MYSQL_HOST: inspircd_mysql_1
-    MYSQL_DATABASE: inspircd
+    MYSQL_DATABASE: irc
     MYSQL_USER: irc
     MYSQL_PASSWORD: password
     MYSQL_PREFIX: anope_
     ANOPE_GEOIP_DATABASE: country
+    ANOPE_ADMIN_EMAIL: "support@localhost"
+    ANOPE_UPLINK_HOST: "inspircd_ircd_1"
+    ANOPE_UPLINK_PORT: "7000"
+    ANOPE_UPLINK_PASSWORD: "secret"
+    ANOPE_SERVERINFO_NAME: "anope.localhost"
+    ANOPE_SALT: "secret"
+    ANOPE_URL: "http://localhost/register/"
 
 
