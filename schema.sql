@@ -15,6 +15,7 @@ CREATE TABLE `users` (
   `created_at` TIMESTAMP DEFAULT now(),
   `vhost` varchar(150) DEFAULT NULL,
   `umode` varchar(20) DEFAULT NULL,
+  `opertype` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_user` (`nick`),
   UNIQUE KEY `unique_user` (`nick`),
